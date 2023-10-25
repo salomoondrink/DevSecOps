@@ -1,0 +1,28 @@
+name: GOAT
+ 
+on:
+  push:
+    branches:
+      - main
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Fase de construcción"
+ 
+ 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Fase de Pruebas"
+ 
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Fase de preubas QA"
+ 
+  prod:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Fase de producción"
